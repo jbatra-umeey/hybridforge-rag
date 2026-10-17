@@ -1,0 +1,34 @@
+# Disposable local integration environment. Never reuse these credentials in production.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: hybridforge
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: local-integration-admin-only
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d hybridforge"]
+      interval: 3s
+      retries: 20
+    tmpfs: ["/var/lib/postgresql/data"]
+  migrate:
+    build:
+      context: .
+      target: runtime
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      MIGRATION_DATABASE_URL: postgresql://postgres:local-integration-admin-only@db/hybridforge
+      RAG_DB_PASSWORD: local-integration-app-only
+    command: ["python", "scripts/migrate.py"]
+  tests:
+    build:
+      context: .
+      target: test
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      TEST_DATABASE_URL: postgresql://rag_app:local-integration-app-only@db/hybridforge
+    command: ["pytest", "-q", "-m", "postgres"]

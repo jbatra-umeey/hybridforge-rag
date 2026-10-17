@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybridforge-rag"
+version = "1.0.0"
+description = "Auditable, tenant-aware hybrid retrieval and grounded generation"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.143.2", "uvicorn==0.54.0", "httpx[socks]==0.28.1",
+  "pydantic==2.14.1", "psycopg[binary,pool]==3.3.6", "PyJWT[crypto]==2.15.1",
+  "prometheus-client==0.26.0", "opentelemetry-sdk==1.45.1",
+  "opentelemetry-exporter-otlp-proto-http==1.45.1"
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "pytest-cov==7.1.0", "ruff==0.17.1"]
+rerank = ["sentence-transformers>=3.4,<6"]
+
+[tool.setuptools.package-data]
+hybridforge = ["static/*"]
+
+[tool.setuptools.packages.find]
+include = ["hybridforge*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["postgres: requires TEST_DATABASE_URL and a migrated PostgreSQL instance"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+

@@ -1,0 +1,2 @@
+# Optional documentation build dependency; separate from serving/runtime locks.
+reportlab==4.4.9

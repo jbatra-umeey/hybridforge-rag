@@ -1,0 +1,18 @@
+services:
+  demo:
+    build:
+      context: .
+      target: runtime
+    ports: ["127.0.0.1:8000:8000"]
+    environment:
+      RAG_MODE: demo
+      DEMO_TOKEN: ${DEMO_TOKEN:-local-demo-token-change-me}
+      SQLITE_PATH: /app/data/demo.db
+    volumes: ["demo-data:/app/data"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    cap_drop: ["ALL"]
+    security_opt: ["no-new-privileges:true"]
+    restart: unless-stopped
+volumes:
+  demo-data:
