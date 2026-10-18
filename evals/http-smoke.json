@@ -1,0 +1,8 @@
+{
+  "server": "uvicorn loopback",
+  "seeded_documents": 6,
+  "query_status": "answered",
+  "citations": 1,
+  "ui_assets": "HTTP 200",
+  "browser_execution": "not_verified"
+}

@@ -1,0 +1,12 @@
+[
+ {"question":"ERR_BRIDGE_042", "relevant":["bridge-runbook"]},
+ {"question":"bridge handshake timeout", "relevant":["bridge-runbook"]},
+ {"question":"rollback canary", "relevant":["release-playbook"]},
+ {"question":"crash-free sessions", "relevant":["release-playbook"]},
+ {"question":"password rotation", "relevant":["security-policy"]},
+ {"question":"access tokens application logs", "relevant":["security-policy"]},
+ {"question":"reciprocal rank fusion", "relevant":["retrieval-guide"]},
+ {"question":"conceptually similar passages", "relevant":["retrieval-guide"]},
+ {"question":"RPO RTO", "relevant":["backup-guide"]},
+ {"question":"point-in-time recovery", "relevant":["backup-guide"]}
+]

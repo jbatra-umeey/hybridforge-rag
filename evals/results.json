@@ -1,0 +1,330 @@
+{
+  "dataset": "10 synthetic document-level smoke cases; not a production benchmark",
+  "mode": "offline_hash_demo",
+  "results": {
+    "lexical": {
+      "aggregate": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "retrieval_ms": 0.83
+      },
+      "cases": [
+        {
+          "question": "ERR_BRIDGE_042",
+          "retrieved": [
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.85
+        },
+        {
+          "question": "bridge handshake timeout",
+          "retrieved": [
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.77
+        },
+        {
+          "question": "rollback canary",
+          "retrieved": [
+            "release-playbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.77
+        },
+        {
+          "question": "crash-free sessions",
+          "retrieved": [
+            "release-playbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.8
+        },
+        {
+          "question": "password rotation",
+          "retrieved": [
+            "security-policy"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.77
+        },
+        {
+          "question": "access tokens application logs",
+          "retrieved": [
+            "security-policy",
+            "executive-planning",
+            "backup-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 1.0
+        },
+        {
+          "question": "reciprocal rank fusion",
+          "retrieved": [
+            "retrieval-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.81
+        },
+        {
+          "question": "conceptually similar passages",
+          "retrieved": [
+            "retrieval-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.84
+        },
+        {
+          "question": "RPO RTO",
+          "retrieved": [
+            "backup-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.95
+        },
+        {
+          "question": "point-in-time recovery",
+          "retrieved": [
+            "backup-guide",
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.74
+        }
+      ]
+    },
+    "dense": {
+      "aggregate": {
+        "recall_at_k": 0.4,
+        "mrr": 0.4,
+        "ndcg_at_k": 0.4,
+        "retrieval_ms": 0.8180000000000001
+      },
+      "cases": [
+        {
+          "question": "ERR_BRIDGE_042",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.76
+        },
+        {
+          "question": "bridge handshake timeout",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.83
+        },
+        {
+          "question": "rollback canary",
+          "retrieved": [
+            "release-playbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.81
+        },
+        {
+          "question": "crash-free sessions",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.76
+        },
+        {
+          "question": "password rotation",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.72
+        },
+        {
+          "question": "access tokens application logs",
+          "retrieved": [
+            "security-policy"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.78
+        },
+        {
+          "question": "reciprocal rank fusion",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.76
+        },
+        {
+          "question": "conceptually similar passages",
+          "retrieved": [
+            "retrieval-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.92
+        },
+        {
+          "question": "RPO RTO",
+          "retrieved": [],
+          "recall_at_k": 0.0,
+          "mrr": 0,
+          "ndcg_at_k": 0.0,
+          "retrieval_ms": 0.79
+        },
+        {
+          "question": "point-in-time recovery",
+          "retrieved": [
+            "backup-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 1.05
+        }
+      ]
+    },
+    "hybrid": {
+      "aggregate": {
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "ndcg_at_k": 1.0,
+        "retrieval_ms": 0.902
+      },
+      "cases": [
+        {
+          "question": "ERR_BRIDGE_042",
+          "retrieved": [
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.77
+        },
+        {
+          "question": "bridge handshake timeout",
+          "retrieved": [
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.93
+        },
+        {
+          "question": "rollback canary",
+          "retrieved": [
+            "release-playbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 1.09
+        },
+        {
+          "question": "crash-free sessions",
+          "retrieved": [
+            "release-playbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.92
+        },
+        {
+          "question": "password rotation",
+          "retrieved": [
+            "security-policy"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.89
+        },
+        {
+          "question": "access tokens application logs",
+          "retrieved": [
+            "security-policy",
+            "executive-planning",
+            "backup-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.89
+        },
+        {
+          "question": "reciprocal rank fusion",
+          "retrieved": [
+            "retrieval-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.75
+        },
+        {
+          "question": "conceptually similar passages",
+          "retrieved": [
+            "retrieval-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.85
+        },
+        {
+          "question": "RPO RTO",
+          "retrieved": [
+            "backup-guide"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 1.05
+        },
+        {
+          "question": "point-in-time recovery",
+          "retrieved": [
+            "backup-guide",
+            "bridge-runbook"
+          ],
+          "recall_at_k": 1.0,
+          "mrr": 1.0,
+          "ndcg_at_k": 1.0,
+          "retrieval_ms": 0.88
+        }
+      ]
+    }
+  }
+}
