@@ -1,0 +1,75 @@
+# Deployment TEMPLATE: supply image, OIDC secrets, database CA and gateway before applying.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hybridforge
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: hybridforge}
+  template:
+    metadata:
+      labels: {app: hybridforge}
+    spec:
+      automountServiceAccountToken: false
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        runAsGroup: 10001
+        fsGroup: 10001
+        seccompProfile: {type: RuntimeDefault}
+      terminationGracePeriodSeconds: 120
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels: {app: hybridforge}
+      containers:
+        - name: api
+          image: registry.example.com/hybridforge-rag:1.0.0
+          ports: [{containerPort: 8000}]
+          env:
+            - {name: RAG_MODE, value: production}
+            - {name: PGSSLROOTCERT, value: /run/db-ca/ca.crt}
+          envFrom: [{secretRef: {name: hybridforge-config}}]
+          resources:
+            requests: {cpu: 500m, memory: 512Mi}
+            limits: {cpu: "2", memory: 2Gi}
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: {drop: [ALL]}
+          readinessProbe:
+            httpGet: {path: /health/ready, port: 8000}
+            initialDelaySeconds: 5
+            timeoutSeconds: 5
+          livenessProbe:
+            httpGet: {path: /health/live, port: 8000}
+            initialDelaySeconds: 20
+          startupProbe:
+            httpGet: {path: /health/live, port: 8000}
+            failureThreshold: 30
+            periodSeconds: 5
+          volumeMounts:
+            - {name: tmp, mountPath: /tmp}
+            - {name: db-ca, mountPath: /run/db-ca, readOnly: true}
+      volumes:
+        - {name: tmp, emptyDir: {}}
+        - name: db-ca
+          secret: {secretName: hybridforge-db-ca}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: hybridforge}
+spec:
+  selector: {app: hybridforge}
+  ports: [{port: 80, targetPort: 8000}]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata: {name: hybridforge}
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: {app: hybridforge}
