@@ -1,0 +1,11 @@
+flowchart TD
+  Input["Authorized document input"] --> Hash["Fingerprint content and embedding identity"]
+  Hash --> Chunk["Chunk with original offsets"]
+  Chunk --> Embed["Embed all chunks"]
+  Embed --> Lock["Begin transaction and lock document"]
+  Lock --> Same{"Same fingerprint?"}
+  Same -->|Yes| Noop["Return unchanged revision"]
+  Same -->|No| Version{"Expected version matches?"}
+  Version -->|No| Conflict["Reject with HTTP 409"]
+  Version -->|Yes| Replace["Replace document and chunks"]
+  Replace --> Commit["Commit new revision"]

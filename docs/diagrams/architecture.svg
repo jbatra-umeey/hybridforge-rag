@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="800" height="760" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 760" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="800" height="760"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-760)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="800" height="760" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="30" y="718" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1436) scale(1,-1)">Retrieval with an explicit evidence trail</text>
+			<text x="30" y="695" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1390) scale(1,-1)">Production path: PostgreSQL + learned embeddings + structured generation</text>
+			<rect x="245" y="600" width="310" height="70" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="260" y="643" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1286) scale(1,-1)">Authenticated request</text>
+			<text x="260" y="621" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1242) scale(1,-1)">JWT tenant, groups and scopes</text>
+			<path d="M 400,600 L 400,565 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="400 565, 403.0448 571.3031, 396.9552 571.3031" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="245" y="485" width="310" height="80" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="260" y="538" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1076) scale(1,-1)">Query embedding + policy scope</text>
+			<text x="260" y="516" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1032) scale(1,-1)">Configured embedding model</text>
+			<text x="260" y="499" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,998) scale(1,-1)">Tenant/ACL checks in PostgreSQL</text>
+			<path d="M 320,485 L 205,440 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="205 440, 211.9793 439.4614, 209.7602 445.1323" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 480,485 L 595,440 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="595 440, 590.2398 445.1323, 588.0207 439.4614" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="55" y="350" width="300" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="70" y="413" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">Lexical retrieval</text>
+			<text x="70" y="391" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,782) scale(1,-1)">tsvector + GIN</text>
+			<text x="70" y="374" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,748) scale(1,-1)">websearch_to_tsquery + ts_rank_cd</text>
+			<rect x="445" y="350" width="300" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="460" y="413" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,826) scale(1,-1)">Dense retrieval</text>
+			<text x="460" y="391" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,782) scale(1,-1)">pgvector cosine similarity</text>
+			<text x="460" y="374" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,748) scale(1,-1)">Exact search over authorized rows</text>
+			<path d="M 205,350 L 330,305 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="330 305, 325.1008 309.9998, 323.0381 304.2702" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 595,350 L 470,305 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="470 305, 476.9619 304.2702, 474.8992 309.9998" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="245" y="225" width="310" height="80" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="260" y="278" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,556) scale(1,-1)">Reciprocal rank fusion</text>
+			<text x="260" y="256" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,512) scale(1,-1)">Optional cross-encoder rerank</text>
+			<text x="260" y="239" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,478) scale(1,-1)">Deduplicate + bound evidence context</text>
+			<path d="M 400,225 L 400,190 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="400 190, 403.0448 196.3031, 396.9552 196.3031" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="245" y="110" width="310" height="80" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="260" y="163" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,326) scale(1,-1)">Grounded generation</text>
+			<text x="260" y="141" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,282) scale(1,-1)">Structured claims + exact source quotes</text>
+			<path d="M 245,150 L 210,150 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="210 150, 216.3031 146.9552, 216.3031 153.0448" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 555,150 L 590,150 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="590 150, 583.6969 153.0448, 583.6969 146.9552" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="35" y="105" width="175" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="50" y="168" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,336) scale(1,-1)">Validate + answer</text>
+			<text x="50" y="146" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,292) scale(1,-1)">Known IDs and quotes</text>
+			<text x="50" y="129" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,258) scale(1,-1)">Return cited claims</text>
+			<rect x="590" y="105" width="175" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="605" y="168" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,336) scale(1,-1)">Abstain / fail</text>
+			<text x="605" y="146" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,292) scale(1,-1)">No usable evidence</text>
+			<text x="605" y="129" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,258) scale(1,-1)">Invalid provider output</text>
+			<text x="35" y="47" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,94) scale(1,-1)">Security scope applies before candidate fusion and before sending text to the model.</text>
+			<text x="35" y="28" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,56) scale(1,-1)">Quote validation checks provenance. It does not prove that a claim follows from the quote.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,24 @@
+erDiagram
+  DOCUMENTS ||--o{ CHUNKS : contains
+  DOCUMENTS {
+    text tenant PK
+    text document_id PK
+    integer version
+    text digest
+    text title
+    text source
+    text_array acl_groups
+    text embedding_id
+    timestamptz updated_at
+  }
+  CHUNKS {
+    text tenant PK
+    text chunk_id PK
+    text document_id FK
+    integer version
+    text body
+    integer start_char
+    integer end_char
+    vector embedding
+    tsvector search_vector
+  }

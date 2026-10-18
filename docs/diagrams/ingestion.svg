@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="800" height="650" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="800" height="650"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-650)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="800" height="650" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="30" y="608" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1216) scale(1,-1)">Atomic document replacement</text>
+			<text x="30" y="585" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1170) scale(1,-1)">Embeddings are prepared before opening the database write transaction</text>
+			<rect x="50" y="460" width="300" height="95" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="65" y="528" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1056) scale(1,-1)">Validate + fingerprint</text>
+			<text x="65" y="506" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1012) scale(1,-1)">Text, title, source, ACLs</text>
+			<text x="65" y="489" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,978) scale(1,-1)">Expected version + embedding identity</text>
+			<rect x="450" y="460" width="300" height="95" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="465" y="528" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1056) scale(1,-1)">Chunk + embed</text>
+			<text x="465" y="506" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1012) scale(1,-1)">1,200 characters / 180 overlap</text>
+			<text x="465" y="489" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,978) scale(1,-1)">Up to 32 chunks per provider request</text>
+			<path d="M 350,508 L 450,508 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="450 508, 443.6969 511.0448, 443.6969 504.9552" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 600,460 L 600,407 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="600 407, 603.0448 413.3031, 596.9552 413.3031" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="35" y="110" width="730" height="295" rx="13" ry="0" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="55" y="375" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,750) scale(1,-1)">ONE DATABASE TRANSACTION</text>
+			<rect x="70" y="245" width="290" height="95" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="85" y="313" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,626) scale(1,-1)">Check retry / conflict</text>
+			<text x="85" y="291" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,582) scale(1,-1)">Same fingerprint: unchanged</text>
+			<text x="85" y="274" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,548) scale(1,-1)">Stale version: reject with HTTP 409</text>
+			<rect x="440" y="245" width="290" height="95" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="455" y="313" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,626) scale(1,-1)">Acquire document lock</text>
+			<text x="455" y="291" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,582) scale(1,-1)">Tenant + document advisory lock</text>
+			<text x="455" y="274" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,548) scale(1,-1)">Read current version and fingerprint</text>
+			<path d="M 600,407 L 585,340 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="585 340, 589.3483 345.4857, 583.4059 346.8161" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 440,290 L 360,290 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="360 290, 366.3031 286.9552, 366.3031 293.0448" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="250" y="135" width="300" height="75" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="265" y="183" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,366) scale(1,-1)">Replace rows + commit</text>
+			<text x="265" y="161" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,322) scale(1,-1)">Delete old chunks and insert new revision</text>
+			<path d="M 215,245 L 325,210 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="325 210, 319.9168 214.8126, 318.0704 209.0097" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<text x="40" y="67" style="font-family: Helvetica-Bold; font-size: 12px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,134) scale(1,-1)">Failure before commit: the prior committed document remains available.</text>
+			<text x="40" y="43" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,86) scale(1,-1)">Active revisions are versioned; historical source bodies are not archived in v1.</text>
+		</g>
+	</g>
+</svg>

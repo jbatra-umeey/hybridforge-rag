@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="800" height="710" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 710" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="800" height="710"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-710)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="800" height="710" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="30" y="668" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1336) scale(1,-1)">Production topology and ownership</text>
+			<text x="30" y="645" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1290) scale(1,-1)">Application templates are delivered; hosted infrastructure is operator-provisioned</text>
+			<rect x="245" y="550" width="310" height="75" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="260" y="598" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,1196) scale(1,-1)">TLS gateway</text>
+			<text x="260" y="576" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,1152) scale(1,-1)">Global quotas, request limits, deadlines</text>
+			<path d="M 330,550 L 210,500 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="210 500, 216.9893 499.6137, 214.6472 505.2348" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 470,550 L 590,500 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="590 500, 585.3528 505.2348, 583.0107 499.6137" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="55" y="420" width="310" height="80" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="70" y="473" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,946) scale(1,-1)">API replica A</text>
+			<text x="70" y="451" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,902) scale(1,-1)">Nonroot container </text>
+			<text x="70" y="434" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,868) scale(1,-1)"> OIDC verification</text>
+			<rect x="435" y="420" width="310" height="80" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="450" y="473" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,946) scale(1,-1)">API replica B</text>
+			<text x="450" y="451" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,902) scale(1,-1)">Stateless serving </text>
+			<text x="450" y="434" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,868) scale(1,-1)"> bounded concurrency</text>
+			<path d="M 210,420 L 310,360 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="310 360, 306.1616 365.8538, 303.0286 360.6321" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 590,420 L 490,360 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="490 360, 496.9714 360.6321, 493.8384 365.8538" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<rect x="240" y="265" width="320" height="95" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="255" y="333" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,666) scale(1,-1)">PostgreSQL + pgvector</text>
+			<text x="255" y="311" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,622) scale(1,-1)">Forced RLS </text>
+			<text x="255" y="294" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,588) scale(1,-1)"> tenant-scoped rows</text>
+			<text x="255" y="277" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,554) scale(1,-1)">Separate migration and serving roles</text>
+			<rect x="35" y="120" width="215" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="50" y="183" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,366) scale(1,-1)">Model provider</text>
+			<text x="50" y="161" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,322) scale(1,-1)">Embedding and generation</text>
+			<text x="50" y="144" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,288) scale(1,-1)">Approved data-processing region</text>
+			<rect x="295" y="120" width="215" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="310" y="183" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,366) scale(1,-1)">Telemetry</text>
+			<text x="310" y="161" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,322) scale(1,-1)">Prometheus + OTLP</text>
+			<text x="310" y="144" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,288) scale(1,-1)">No source or prompt payloads</text>
+			<rect x="555" y="120" width="215" height="90" rx="10" ry="10" style="stroke: rgb(83%,89%,89%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="570" y="183" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,366) scale(1,-1)">Backup / recovery</text>
+			<text x="570" y="161" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,322) scale(1,-1)">Encrypted backups + WAL</text>
+			<text x="570" y="144" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,288) scale(1,-1)">Restore drills required</text>
+			<path d="M 100,420 L 140,210 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="140 210, 141.8116 216.7615, 135.8296 215.6221" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 700,420 L 700,235 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 700,235 L 405,235 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<path d="M 405,235 L 405,210 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="405 210, 408.0448 216.3031, 401.9552 216.3031" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<path d="M 560,290 L 660,210 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="660 210, 656.9801 216.3151, 653.176 211.56" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<text x="35" y="65" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,130) scale(1,-1)">Identity, ingress, secrets, database hosting and observability are external dependencies.</text>
+			<text x="35" y="42" style="font-family: Helvetica-Bold; font-size: 11px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,84) scale(1,-1)">The supplied manifests have not been deployed or load-tested in this delivery.</text>
+		</g>
+	</g>
+</svg>

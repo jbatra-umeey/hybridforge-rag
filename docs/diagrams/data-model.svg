@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="800" height="470" preserveAspectRatio="xMinYMin meet" viewBox="0 0 800 470" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="800" height="470"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-470)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="800" height="470" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,96%); fill-rule: evenodd;"/>
+			<text x="30" y="428" style="font-family: Helvetica-Bold; font-size: 22px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,856) scale(1,-1)">Tenant-scoped relational model</text>
+			<text x="30" y="405" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,810) scale(1,-1)">A document and its lexical/vector chunks commit together</text>
+			<rect x="40" y="100" width="300" height="260" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="55" y="333" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,666) scale(1,-1)">DOCUMENTS</text>
+			<text x="55" y="311" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,622) scale(1,-1)">PK tenant, document_id</text>
+			<text x="55" y="294" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,588) scale(1,-1)">version, digest</text>
+			<text x="55" y="277" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,554) scale(1,-1)">title, source</text>
+			<text x="55" y="260" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,520) scale(1,-1)">acl_groups[]</text>
+			<text x="55" y="243" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,486) scale(1,-1)">embedding_id</text>
+			<text x="55" y="226" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,452) scale(1,-1)">updated_at</text>
+			<rect x="460" y="100" width="300" height="260" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.2; fill: rgb(87%,96%,92%); fill-rule: evenodd;"/>
+			<text x="475" y="333" style="font-family: Helvetica-Bold; font-size: 14px;fill: rgb(8%,20%,25%); stroke:none;" transform="translate(0,666) scale(1,-1)">CHUNKS</text>
+			<text x="475" y="311" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,622) scale(1,-1)">PK tenant, chunk_id</text>
+			<text x="475" y="294" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,588) scale(1,-1)">FK tenant, document_id</text>
+			<text x="475" y="277" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,554) scale(1,-1)">version, title, source</text>
+			<text x="475" y="260" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,520) scale(1,-1)">body, start_char, end_char</text>
+			<text x="475" y="243" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,486) scale(1,-1)">embedding vector(1536)</text>
+			<text x="475" y="226" style="font-family: Helvetica; font-size: 10.5px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,452) scale(1,-1)">generated search_vector</text>
+			<path d="M 340,230 L 460,230 Z" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1.6;"/>
+			<polygon points="460 230, 453.6969 233.0448, 453.6969 226.9552" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(3%,49%,51%); fill-rule: evenodd;"/>
+			<text x="365" y="248" style="font-family: Helvetica; font-size: 10px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,496) scale(1,-1)">1 to many</text>
+			<text x="40" y="57" style="font-family: Helvetica; font-size: 11px;fill: rgb(32%,43%,47%); stroke:none;" transform="translate(0,114) scale(1,-1)">Foreign key cascade deletes active chunks. Both content tables FORCE row-level security.</text>
+		</g>
+	</g>
+</svg>

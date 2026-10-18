@@ -1,0 +1,12 @@
+flowchart TD
+  Client["Browser or API client"] --> API["Authenticate and bound request"]
+  API --> Embed["Embed query"]
+  Embed --> Scope["Tenant and group policy"]
+  Scope --> Lexical["PostgreSQL full-text search"]
+  Scope --> Dense["Exact pgvector similarity"]
+  Lexical --> Fuse["Reciprocal rank fusion"]
+  Dense --> Fuse
+  Fuse --> Context["Optional rerank and context selection"]
+  Context --> Model["Structured generation"]
+  Model --> Check["Validate source IDs and exact quotes"]
+  Check --> Answer["Cited answer or abstention"]

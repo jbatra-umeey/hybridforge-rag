@@ -1,0 +1,12 @@
+flowchart TD
+  Client["Client"] --> Gateway["TLS gateway and global quotas"]
+  Gateway --> A["API replica A"]
+  Gateway --> B["API replica B"]
+  A --> DB["PostgreSQL and pgvector"]
+  B --> DB
+  A --> Models["Embedding and generation provider"]
+  B --> Models
+  A --> OTel["Metrics and OTLP collector"]
+  B --> OTel
+  Migration["Separate migration job"] --> DB
+  DB --> Backup["Encrypted backup and WAL archive"]
