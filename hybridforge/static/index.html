@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HybridForge / Retrieval Workbench</title><link rel="stylesheet" href="/assets/style.css"></head>
+<body><aside><div class="brand">H<span>F</span></div><strong>HybridForge</strong><p>RETRIEVAL WORKBENCH</p>
+<div class="nav active">Explore evidence</div><div class="nav">Lexical + semantic</div><div class="nav">Citations & provenance</div>
+<footer><span class="dot"></span> <span id="mode">Connecting</span><p>Version 1.0 / Enterprise knowledge</p></footer></aside>
+<main><header><div><div class="eyebrow">KNOWLEDGE SYSTEMS / HYBRID RAG</div><h1>Answers with a paper trail.</h1>
+<p>Inspect the evidence, compare retrieval paths, and trace every cited source.</p></div><span class="badge">RRF FUSION</span></header>
+<section class="connection"><label>Session token<input id="token" type="password" placeholder="Bearer token (kept in memory only)" autocomplete="off"></label>
+<button id="connect" class="secondary">Load collection</button><span id="collection">No collection loaded</span></section>
+<section class="workspace"><div class="query-panel"><div class="eyebrow">01 / ASK YOUR KNOWLEDGE BASE</div>
+<label for="question" class="sr-only">Question</label><textarea id="question" placeholder="What causes ERR_BRIDGE_042 and how do we recover?">What causes ERR_BRIDGE_042 and how do we recover?</textarea>
+<div class="controls"><label>Retrieval<select id="retrieval"><option value="hybrid">Hybrid fusion</option><option value="lexical">Lexical only</option><option value="dense">Dense only</option></select></label>
+<label>Sources<select id="topk"><option>3</option><option selected>5</option><option>8</option></select></label><button id="ask">Find an answer ↗</button></div>
+<div class="examples"><button data-q="ERR_BRIDGE_042">Error code</button><button data-q="rollback canary">Release rollback</button><button data-q="password rotation">Security policy</button></div></div>
+<div class="stats"><div><small>RETRIEVAL LATENCY</small><strong id="latency">—</strong></div><div><small>LEXICAL / DENSE</small><strong id="candidates">—</strong></div><div><small>SELECTED EVIDENCE</small><strong id="selected">—</strong></div></div></section>
+<p id="notice" role="status">Run scripts/seed.py first to load the included fictional engineering documents.</p>
+<div class="results"><section class="answer-card"><div class="eyebrow">02 / GROUNDED RESPONSE</div><h2 id="answer-title">Your answer appears here</h2>
+<div id="answer" class="answer">Each claim includes a source reference. The offline demo returns evidence extracts; production mode calls your configured model.</div>
+<div id="citations"></div></section><section class="evidence-card"><div class="eyebrow">03 / RETRIEVAL TRACE</div><h2>Evidence explorer</h2><div id="evidence"><p class="muted">Rank positions and source snippets appear after a query.</p></div></section></div>
+<section class="library"><h2>Document collection</h2><div id="documents" class="muted">Connect with a token to see accessible documents.</div></section>
+<p class="footnote">Citation checks verify source identity and exact quotes. They do not prove semantic entailment.</p></main><script src="/assets/app.js"></script></body></html>
